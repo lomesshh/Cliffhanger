@@ -1,34 +1,25 @@
-@import url('https://apolloui-neog.netlify.app/utility/common.css');
-@import url('https://apolloui-neog.netlify.app/components/modal/modal.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Radio+Canada:wght@500&display=swap');
 
 :root {
-  --background: #1e2024;
-  --text: #f3f3f3;
-  --btn--text: #1e2024;
-  --btn--hover: #dbdada;
-  --slogan--tertiary: #eea00f;
-  --slogan--primary: #f3f3f3;
+  --background: #ffffff;
+  --text: #374151;
+  --primary: #60a5fa;
+  --primary--hover: #2d88f7;
+
   --tertiary: #eea00f;
   --tertiary--hover: #df9a1b;
+
   --white: #ffffff;
   --green: #3ea93e;
   --red: #b80c28;
   --yellow: goldenrod;
 }
 
-[app-theme='light'] {
-  --background: #f3f3f3;
-  --text: #1e2024;
-  --slogan--tertiary: #1e2024;
-  --slogan--primary: #eea00f;
-  --btn--text: #1e2024;
-  --btn--hover: #dbdada;
-}
-
 html {
   font-size: 88%;
   height: 100vh;
+  font-family: 'Radio Canada', sans-serif;
 }
 
 .App {
@@ -37,7 +28,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  transition: all 200ms;
 }
 
 .mg--full {
@@ -48,11 +38,12 @@ html {
   color: var(--text);
 }
 .box-shadow {
-  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  box-shadow: 0px 3px 18px -5px #d1d5db;
 }
+
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 0.65rem;
+  width: 0.45rem;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary);
@@ -69,44 +60,34 @@ html {
   margin: 1rem 0;
 }
 .btn--auth {
-  color: var(--btn--text);
+  color: var(--text);
   background-color: var(--white);
-  border: 2px solid var(--white);
+  border: 2px solid var(--text);
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
 }
 .btn--auth:hover {
-  border: 2px solid var(--tertiary);
-  background-color: var(--tertiary);
+  border: 2px solid var(--primary);
+  background-color: var(--primary);
 }
 .btn--auth--solid {
   color: var(--white);
-  background-color: var(--tertiary);
-  border: 2px solid var(--tertiary);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
   transition: all 100ms;
 }
 .btn--auth--solid:hover {
-  border: 2px solid var(--tertiary--hover);
-  background-color: var(--tertiary--hover);
+  border: 2px solid var(--primary--hover);
+  background-color: var(--primary--hover);
 }
-.btn--disabled,
-.btn--disabled:hover {
-  color: var(--white);
-  background-color: var(--black);
-  border: 2px solid var(--black);
-  border-radius: 4px;
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem;
-  pointer-events: none;
-}
+
 .btn--cancel,
-.btn--cancel--solid,
-.btn--cancel--solid:hover {
-  color: var(--btn--text);
+.btn--cancel:hover {
+  color: var(--text);
   background-color: var(--white);
   border: 2px solid var(--text);
   border-radius: 4px;
@@ -116,9 +97,9 @@ html {
 
 .btn--cancel--solid,
 .btn--cancel:hover {
-  color: var(--btn--text);
-  background-color: var(--btn--hover);
-  border: 2px solid var(--text);
+  color: var(--white);
+  background-color: var(--red);
+  border: 2px solid var(--red);
 }
 
 /* Navbar */
