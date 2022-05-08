@@ -1,9 +1,12 @@
-import './App.css';
+import "./App.css";
+import AvailableRoutes from "./frontend/routes/AvailableRoutes";
 
 function App() {
-  return <div className='App'>
-    Welcome to Cliffhanger
-  </div>;
+  return (
+    <div>
+      <AvailableRoutes />
+    </div>
+  );
 }
 
 export default App;

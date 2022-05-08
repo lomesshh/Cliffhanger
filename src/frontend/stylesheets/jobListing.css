@@ -1,0 +1,112 @@
+.job {
+    border-radius: 10px;
+    border: 1px solid var(--text);
+    max-width: 60rem;
+    width: 100%;
+    margin: 1rem auto;
+  }
+  
+  /* Job Header */
+  .job__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    color: var(--text);
+    border-bottom: 1px solid var(--text--light);
+  }
+  .job__logo {
+    width: 3rem;
+    height: 3rem;
+  }
+  .job__role {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0.25rem 0;
+  }
+  .job__location {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  /* Job Type */
+  .job__type {
+    color: var(--white);
+    background-color: var(--green);
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .job__type.inoffice {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+  
+  /* Job Tech */
+  .job__tech {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 1rem 1rem;
+  }
+  .job__tech span {
+    background-color: var(--text--light);
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+  }
+  
+  /* Job table */
+  .job__table {
+    border: none;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  th,
+  td {
+    text-align: start;
+    color: var(--text);
+    border: none;
+    font-weight: 500;
+  }
+  th {
+    font-size: 1.05rem;
+    text-decoration: underline;
+  }
+  
+  /* Job description */
+  .job__description {
+    padding: 1rem 1.25rem;
+    display: none;
+  }
+  .job__description.show {
+    display: block;
+  }
+  .job__description p,
+  .job__description ul {
+    font-size: 1rem;
+    color: var(--text);
+    text-align: justify;
+  }
+  li {
+    margin: 0 1rem;
+  }
+  
+  /* Job footer */
+  .job__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 1px solid var(--text--light);
+  }
+  .job__match__title {
+    color: var(--green);
+  }
+  .job__match__date {
+    color: var(--text);
+  }
